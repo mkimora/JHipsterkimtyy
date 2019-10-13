@@ -1,0 +1,63 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="transaction">
+            <h2><span jhiTranslate="jHipsterkimtyApp.transaction.detail.title">Transaction</span> {{transaction.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jHipsterkimtyApp.transaction.dateT">Date T</span></dt>
+                <dd>
+                    <span>{{transaction.dateT}}</span>
+                </dd>
+                <dt><span jhiTranslate="jHipsterkimtyApp.transaction.montant">Montant</span></dt>
+                <dd>
+                    <span>{{transaction.montant}}</span>
+                </dd>
+                <dt><span jhiTranslate="jHipsterkimtyApp.transaction.dateR">Date R</span></dt>
+                <dd>
+                    <span>{{transaction.dateR}}</span>
+                </dd>
+                <dt><span jhiTranslate="jHipsterkimtyApp.transaction.commission">Commission</span></dt>
+                <dd>
+                    <span>{{transaction.commission}}</span>
+                </dd>
+                <dt><span jhiTranslate="jHipsterkimtyApp.transaction.commSystem">Comm System</span></dt>
+                <dd>
+                    <span>{{transaction.commSystem}}</span>
+                </dd>
+                <dt><span jhiTranslate="jHipsterkimtyApp.transaction.commExp">Comm Exp</span></dt>
+                <dd>
+                    <span>{{transaction.commExp}}</span>
+                </dd>
+                <dt><span jhiTranslate="jHipsterkimtyApp.transaction.tax2">Tax 2</span></dt>
+                <dd>
+                    <span>{{transaction.tax2}}</span>
+                </dd>
+                <dt><span jhiTranslate="jHipsterkimtyApp.transaction.statut">Statut</span></dt>
+                <dd>
+                    <span>{{transaction.statut}}</span>
+                </dd>
+                <dt><span jhiTranslate="jHipsterkimtyApp.transaction.code">Code</span></dt>
+                <dd>
+                    <span>{{transaction.code}}</span>
+                </dd>
+                <dt><span jhiTranslate="jHipsterkimtyApp.transaction.commretrait">Commretrait</span></dt>
+                <dd>
+                    <span>{{transaction.commretrait}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/transaction', transaction.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

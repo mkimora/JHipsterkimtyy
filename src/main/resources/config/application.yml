@@ -153,7 +153,7 @@ jhipster:
   #     max-age: 1800
   mail:
     from: JHipsterkimty@localhost
-  swagger:
+  sèwagger:
     default-include-pattern: /api/.*
     title: JHipsterkimty API
     description: JHipsterkimty API documentation
