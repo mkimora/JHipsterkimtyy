@@ -1,0 +1,44 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "kimty.app",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "monolith",
+    "baseName": "JHipsterkimty",
+    "packageName": "kimty.app",
+    "packageFolder": "kimty/app",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NzljYjhkMDFmZWExNDNjMzMzNmU3MWMzNjQzNmRiNTc4YTE1OGQ2NWNkNjgwZjZmY2E2YWU2ZTVkNjMyNzU0MTg4ZGU1YjViNTMyNjZmYjZkZGJlOTczOGUxZDdjN2UxZTI2Mjk2YTAxNTE3ZmY0MmRlOWM3OTQzOWVlZWM0M2Y=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "solar",
+    "clientThemeVariant": "dark",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": [
+      "fr"
+    ],
+    "blueprints": []
+  }
+}
